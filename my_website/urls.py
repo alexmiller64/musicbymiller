@@ -16,5 +16,7 @@ urlpatterns = [
     url(r'^a-very-hard-to-guess-url/', include(paypal_urls)),
     url(r'^paypal-return', paypal_views.paypal_return),
     url(r'^paypal-cancel', paypal_views.paypal_cancel),
-    url(r'^products/$', product_views.all_products),
+    url(r'^products/$', product_views.all_products, name='products'),
+    url(r'^about/$', hello_views.get_about, name='about'),
+    url(r'^contact/$', hello_views.get_contact, name='contact'),
 ]

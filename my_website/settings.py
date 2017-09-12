@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'paypal.standard.ipn',
     'paypal_store',
     'products',
+    'schedule',
+    'djangobower',
 ]
 
 MIDDLEWARE = [
@@ -147,3 +149,24 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_uCphKUt2PziPqiNBYxbFn6Hi')
 STATICFILES_DIRS = (
    os.path.join(BASE_DIR, "static"),
 )
+
+# These for adding calendar functionality (django-scheduler)
+
+# TEMPLATE_CONTEXT_PROCESSORS = [
+#     'django.template.context_processors.request',
+# ]
+
+# STATICFILES_FINDERS = [
+#     'djangobower.finders.BowerFinder',
+# ]
+
+BOWER_COMPONENTS_ROOT = '/my_website/components/'
+
+BOWER_INSTALLED_APPS = (
+    'jquery',
+    'jquery-ui',
+    'bootstrap',
+)
+
+
+
