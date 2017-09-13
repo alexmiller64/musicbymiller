@@ -3,12 +3,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Our Simple Site</title>
+    <title>Music by Miller</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Monofett|Monoton|Permanent+Marker|Zilla+Slab+Highlight" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     {% block head_js %}{% endblock %}
@@ -17,39 +18,27 @@
 
 <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
     <div class="container-fluid">
-        <div class="navbar-header"><a class="navbar-brand" href="#">Music by Miller</a>
+        <div class="navbar-header"><a id="marker" class="navbar-brand" href="{% url 'index' %}">Six strings and a laptop</a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
             </button>
         </div>
         <div class="collapse navbar-collapse navbar-menubuilder">
-            <ul class="nav nav-pills pull-right">
+            <ul id="nav-text" class="nav nav-pills pull-right">
                 <li><a href="{% url 'index' %}">Home</a></li>
                 <li><a href="{% url 'about' %}">About</a></li>
                 <li><a href="{% url 'contact' %}">Contact</a></li>
-                <li><a href="{% url 'products' %}">Products & Bookings</a></li>
+
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'logout' %}">Log Out</a></li>
+                {% else %}
                 <li><a href="{% url 'register' %}">Register</a></li>
                 <li><a href="{% url 'login' %}">Log In</a></li>
-                <li><a href="{% url 'logout' %}">Log Out</a></li>
-                </li>
+                    <li><a id="barcode" href="{% url 'products' %}">Products & Bookings</a></li>
+                {% endif %}
             </ul>
         </div>
     </div>
 </div>
-
-
-{#<div class="container">#}
-{#   <div class="masthead">#}
-{#       <ul class="nav nav-pills pull-right">#}
-{#           <li><a href="#">Home</a></li>#}
-{#           <li><a href="#">About</a></li>#}
-{#           <li><a href="#">Contact</a></li>#}
-{#           <li><a href="/products/">Products</a></li>#}
-{#           <li><a href="{% url 'register' %}">Register</a></li>#}
-{#           <li><a href="{% url 'login' %}">Log In</a></li>#}
-{#           <li><a href="{% url 'logout' %}">Log Out</a></li>#}
-{#       </ul>#}
-{#       <h1><span class="fui-settings-16 muted">Our Simple Site</span></h1>#}
-{#   </div>#}
 
 
    <hr>
@@ -69,7 +58,7 @@
        {% endblock %}
    </div>
    <hr>
-   <div class="footer">
+   <div class="footer" id="watermark">
        <p>Alex Miller<br>alexander.dean.miller@gmail.com<br>07576861159</p>
    </div>
 </div>
