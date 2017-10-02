@@ -1,0 +1,50 @@
+{% extends 'products/products.html' %}
+{% block content %}
+{%csrf_token%}
+
+    {{ post }}
+
+    {{ get }}
+
+    <h1 id="page-text">Thank you for your purchase :-)</h1><p><br>
+
+    If you made an event booking, feel free to contact me, or await my call/email to discuss your special day.
+
+    <br><br>If you purchased my EP, or received it free with an event booking, you can download that below:
+
+    <br><br><a class="coolButton" href="/static/media/ep.zip" download="The Merry Morbid EP">Download EP</a>
+
+{#    <br><br><button class="coolButton" onclick=" window.open(href='media/ep.zip', download='The Merry Morbid: Six Strings and a Laptop')">Download EP</button>#}
+
+{#ep download#}
+
+{#        <!-- List of uploaded documents -->#}
+{#        {% if documents %}#}
+{#            <ul>#}
+{#                {% for document in documents %}#}
+{#                    <li><a href="{{ document.docfile.url }}">{{ document.docfile.name }}</a></li>#}
+{#                {% endfor %}#}
+{#            </ul>#}
+{#        {% else %}#}
+{#            <p>No documents.</p>#}
+{#        {% endif %}#}
+{##}
+{#        <!-- Upload form. Note enctype attribute! -->#}
+{#        <form action="{% url "ep" %}" method="post" enctype="multipart/form-data">#}
+{#            {% csrf_token %}#}
+{#            <p>{{ form.non_field_errors }}</p>#}
+{##}
+{#            <p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>#}
+{##}
+{#            <p>#}
+{#                {{ form.docfile.errors }}#}
+{#                {{ form.docfile }}#}
+{#            </p>#}
+{##}
+{#            <p><input class="coolButton" type="submit" value="Download"/></p>#}
+{#        </form>#}
+{#    ep download#}
+
+
+    </p>
+{% endblock %}

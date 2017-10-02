@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <div class="center">
+            <div>
+                {{ post.published_date }}
+            </div>
+            <h1 id="blog-titles">{{ post.title }}</h1>
+            <p>{{ post.content|linebreaks }}</p>
+            <button class="coolButton" onclick="location.href='/blog'">Back To Blog</button>
+        </div>
+{% endblock %}
+

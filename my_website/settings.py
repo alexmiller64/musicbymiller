@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'schedule',
     'djangobower',
     'blog',
+    'download',
 ]
 
 MIDDLEWARE = [
@@ -169,5 +170,12 @@ BOWER_INSTALLED_APPS = (
     'bootstrap',
 )
 
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_URL = '/media/'
 
 
+# APPEND_SLASH = False
+
+# login required experiment
+LOGIN_URL = 'django.contrib.auth.views.login'
+# login required experiment

@@ -15,11 +15,34 @@
                 <tr>
                     <td>{{ product.name }}</td>
                     <td>{{ product.description }}</td>
-                    <td>${{ product.price }}</td>
+                    <td>£{{ product.price }}</td>
                     <td>{{ product.image }}</td>
-                    <td>{{ product.paypal_form.sandbox }}</td>
+                    <td><form action="/payment-accepted/" method="POST">
+                        {%csrf_token%}
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_bGSY225Gxzy1kMzKpXYgnM4d"
+    data-amount="{% widthratio product.price 1 100 %}"
+    data-name="{{ product.name }}"
+    data-description="{{ product.description }}"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto"
+    data-zip-code="true"
+    data-currency="gbp">
+  </script>
+</form></td>
+{#                    <td>{{ product.paypal_form.sandbox }}</td>#}
                 </tr>
             {% endfor %}
         </tbody>
     </table>
+
+    <p id="alert">Before paying for any performances, please check my availability here: </p>
+
+    {% if user.is_authenticated %}
+     <button class="coolButton" onclick=" window.open('https://calendly.com/alexander-dean-miller/availability-for-performance','_blank')">Performance Availability</button>
+    {% else %}
+     <button class="coolButton">Performance Availability</button>
+      <span class="glyphicon glyphicon-lock"></span>  Please Login to access this feature
+    {% endif %}
 {% endblock %}

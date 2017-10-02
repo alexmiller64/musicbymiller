@@ -108,6 +108,12 @@
     color: black
 }
 
+#blog-titles{
+    font-family: 'Monofett', cursive;
+    font-size: 200%;
+    color: deepskyblue;
+}
+
 #page-text{
     font-family: 'Permanent Marker', cursive;
     font-size: 400%;
@@ -117,4 +123,115 @@
 #marker{
     font-family: 'Permanent Marker', cursive;
     color: black;
+}
+
+/*Blog section styling*/
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 25px;
+}
+
+
+/*Blog button css*/
+
+.coolButton {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #F2F2F2), color-stop(1, #87cefa));
+	background:-moz-linear-gradient(top, #F2F2F2 5%, #87cefa 100%);
+	background:-webkit-linear-gradient(top, #F2F2F2 5%, #87cefa 100%);
+	background:-o-linear-gradient(top, #F2F2F2 5%, #87cefa 100%);
+	background:-ms-linear-gradient(top, #F2F2F2 5%, #87cefa 100%);
+	background:linear-gradient(to bottom, #F2F2F2 5%, #87cefa 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F2F2F2', endColorstr='#87cefa',GradientType=0);
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	/*border:1px solid #18ab29;*/
+	display:inline-block;
+	cursor:pointer;
+	/*color:#ffffff;*/
+	font-family: Permanent Marker;
+	/*font-size:17px;*/
+	/*padding:16px 31px;*/
+    font-size: 12px;
+    padding: 8px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    box-shadow: 6px 6px 3px #888888;
+}
+.coolButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #87cefa), color-stop(1, #F2F2F2));
+	background:-moz-linear-gradient(top, #87cefa 5%, #F2F2F2 100%);
+	background:-webkit-linear-gradient(top, #87cefa 5%, #F2F2F2 100%);
+	background:-o-linear-gradient(top, #87cefa 5%, #F2F2F2 100%);
+	background:-ms-linear-gradient(top, #87cefa 5%, #F2F2F2 100%);
+	background:linear-gradient(to bottom, #87cefa 5%, #F2F2F2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#87cefa', endColorstr='#F2F2F2',GradientType=0);
+	background-color:#5cbf2a;
+}
+.coolButton:active {
+	position:relative;
+	top:1px;
+    outline: none;
+    border: none;
+}
+
+.coolButton:focus{
+    outline: 0;
+}
+
+
+/*Text*/
+
+#alert{
+    background-color: #87cefa;
+    color: black;
+    display: inline;
+    box-shadow: 5px 5px 3px #888888;
+}
+
+
+a {
+    color: #555555;
+    text-decoration: none;
+}
+
+a:hover
+{
+     color:#555555;
+     text-decoration:none;
+     cursor:pointer;
+}
+
+#watermarkLink {
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+.wmLink:hover
+{
+     color:#555555;
+     text-decoration:none;
+     cursor:pointer;
+}
+
+
+#footer {
+    color: rgba(119, 119, 119, 1);
+    font-size: 14px;
+    background-color: rgba(135, 206, 250, 1);
+    background: -webkit-linear-gradient(top, rgba(242, 242, 242, 1) 0%, rgba(135, 206, 250, 1) 100%);
+    background: linear-gradient(to bottom, rgba(242, 242, 242, 1) 0%, rgba(135, 206, 250, 1) 100%);
+    /*border-width: 0px;*/
+    /*border-radius: 27px;*/
+    /*box-shadow: 10px 10px 5px #888888;*/
+    text-align: center;
+    opacity: 0.7;
+    font-family: "Permanent Marker", cursive;
+}
+
+#footerText{
+
 }

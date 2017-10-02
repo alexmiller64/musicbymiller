@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Music by Miller</title>
+    <title>6Salt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -18,13 +18,14 @@
 
 <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
     <div class="container-fluid">
-        <div class="navbar-header"><a id="marker" class="navbar-brand" href="{% url 'index' %}">Six strings and a laptop</a>
+        <div class="navbar-header"><a id="marker" class="navbar-brand" href="{% url 'blog' %}">Six strings and a laptop</a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
             </button>
         </div>
         <div class="collapse navbar-collapse navbar-menubuilder">
             <ul id="nav-text" class="nav nav-pills pull-right">
-                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'blog' %}">Home</a></li>
+{#                <li><a href="{% url 'index' %}">Home</a></li>#}
                 <li><a href="{% url 'about' %}">About</a></li>
                 <li><a href="{% url 'contact' %}">Contact</a></li>
 
@@ -33,8 +34,8 @@
                 {% else %}
                 <li><a href="{% url 'register' %}">Register</a></li>
                 <li><a href="{% url 'login' %}">Log In</a></li>
-                    <li><a id="barcode" href="{% url 'products' %}">Products & Bookings</a></li>
                 {% endif %}
+                <li><a id="barcode" href="{% url 'products' %}">Products & Booking</a></li>
             </ul>
         </div>
     </div>
@@ -58,9 +59,36 @@
        {% endblock %}
    </div>
    <hr>
-   <div class="footer" id="watermark">
-       <p>Alex Miller<br>alexander.dean.miller@gmail.com<br>07576861159</p>
-   </div>
+   <footer id="footer">
+       <p>Alex Miller<br><span class="glyphicon glyphicon-phone"></span>  <a class="wmLink" id="watermarkLink" href="tel:0757-6861-159">0757-6861-159</a>  <span class="glyphicon glyphicon-phone"></span><br><span class="glyphicon glyphicon-envelope"></span>  <a class="wmLink" id="watermarkLink" href="mailto:alexander.dean.miller@gmail.com">alexander.dean.miller@gmail.com</a>  <span class="glyphicon glyphicon-envelope"></span></p>
+   </footer>
+
+{#        <footer id="footer" class="page-footer">#}
+{#          <div class="container">#}
+{#            <div class="row">#}
+{#              <div class="col l6 s12">#}
+{#                <h5 class="white-text">Footer Content</h5>#}
+{#                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>#}
+{#              </div>#}
+{#              <div class="col l4 offset-l2 s12">#}
+{#                <h5 class="white-text">Links</h5>#}
+{#                <ul>#}
+{#                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>#}
+{#                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>#}
+{#                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>#}
+{#                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>#}
+{#                </ul>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{#          <div class="footer-copyright">#}
+{#            <div class="container">#}
+{#            © 2014 Copyright Text#}
+{#            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>#}
+{#            </div>#}
+{#          </div>#}
+{#        </footer>#}
+
 </div>
 </body>
 
