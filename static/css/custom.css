@@ -120,6 +120,11 @@
     color: black
 }
 
+#page-textSmall{
+    font-family: 'Permanent Marker', cursive;
+    color: black
+}
+
 #marker{
     font-family: 'Permanent Marker', cursive;
     color: black;
@@ -234,4 +239,9 @@ a:hover
 
 #footerText{
 
+}
+
+#center{
+    display: block;
+    text-align: center;
 }

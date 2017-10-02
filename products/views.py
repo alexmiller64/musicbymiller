@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Product
-# login required experiment
+# login required experiment - functioning
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
@@ -18,7 +18,7 @@ class ProductView(LoggedInMixin):
 
         def get_queryset(self):
             return Product.objects.filter(owner=self.request.user)
-# login required experiment
+# login required experiment - functioning
 
 
 def all_products(request):

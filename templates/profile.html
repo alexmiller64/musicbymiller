@@ -1,5 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
-    <h2>Success!</h2>
-    <p>You are logged in as {{ user.email }} </p>
+    <h1 id="page-text">Success!</h1>
+    <p>You are now logged in under {{ user.email }} </p>
+
+    <hr>
+
+    <h3 id="page-textSmall">Where to?</h3>
+
+    <br>
+    <button class="coolButton" onclick="location.href='{% url 'blog' %}'">
+         Home/Blog</button>
+
+    <br><br>
+    <button class="coolButton" onclick="location.href='{% url 'products' %}'">
+         Hit The Store</button>
+
+    <br><br>
+    <button class="coolButton" onclick=" window.open('https://calendly.com/alexander-dean-miller/availability-for-performance','_blank')">
+        Check Performance Availability</button>
+
 {% endblock %}

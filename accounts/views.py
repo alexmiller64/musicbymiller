@@ -4,18 +4,6 @@ from django.shortcuts import render, redirect
 from django.template.context_processors import csrf
 from accounts.forms import UserRegistrationForm, UserLoginForm
 from django.contrib.auth.decorators import login_required
-from django.views.decorators.csrf import csrf_exempt
-
-
-@csrf_exempt
-def paypal_return(request):
-    args = {'post': request.POST, 'get': request.GET}
-    return render(request, 'paypal/paypal_return.html', args)
-
-
-def paypal_cancel(request):
-    args = {'post': request.POST, 'get': request.GET}
-    return render(request, 'paypal/paypal_cancel.html', args)
 
 
 @login_required(login_url='/login/')

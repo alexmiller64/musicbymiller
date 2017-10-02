@@ -1,48 +1,101 @@
 {% extends "base.html" %}
 {% block content %}
+{% if user.is_authenticated %}
+
     <table class="table table-striped">
         <thead>
             <tr>
                 <th>Name</th>
                 <th>Description</th>
                 <th>Price</th>
-                <th>Image</th>
+{#                <th>Image</th>#}
                 <th>Purchase</th>
             </tr>
         </thead>
+
         <tbody>
-            {% for product in products %}
+
+ {% for product in products %}
+
                 <tr>
                     <td>{{ product.name }}</td>
                     <td>{{ product.description }}</td>
                     <td>£{{ product.price }}</td>
-                    <td>{{ product.image }}</td>
+{#                    <td>{{ product.image }}</td>#}
                     <td><form action="/payment-accepted/" method="POST">
-                        {%csrf_token%}
-  <script
-    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-    data-key="pk_test_bGSY225Gxzy1kMzKpXYgnM4d"
-    data-amount="{% widthratio product.price 1 100 %}"
-    data-name="{{ product.name }}"
-    data-description="{{ product.description }}"
-    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-    data-locale="auto"
-    data-zip-code="true"
-    data-currency="gbp">
-  </script>
-</form></td>
-{#                    <td>{{ product.paypal_form.sandbox }}</td>#}
+
+ {%csrf_token%}
+                <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_test_bGSY225Gxzy1kMzKpXYgnM4d"
+                    data-amount="{% widthratio product.price 1 100 %}"
+                    data-name="{{ product.name }}"
+                    data-description="{{ product.description }}"
+                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                    data-locale="auto"
+                    data-zip-code="true"
+                    data-currency="gbp">
+                </script>
+                    </form></td>
                 </tr>
-            {% endfor %}
+{% endfor %}
         </tbody>
     </table>
 
+{#    login experiment - functioning #}
+{% else %}
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+{#                <th>Image</th>#}
+                <th>Purchase</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+ {% for product in products %}
+
+                <tr>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.description }}</td>
+                    <td>£{{ product.price }}</td>
+{#                    <td>{{ product.image }}</td>#}
+                    <td><span id="center" class="glyphicon glyphicon-lock"></span></td>
+
+                </tr>
+{% endfor %}
+{% endif %}
+        </tbody>
+    </table>
+
+{#login experiment - functioning    #}
+
     <p id="alert">Before paying for any performances, please check my availability here: </p>
 
-    {% if user.is_authenticated %}
-     <button class="coolButton" onclick=" window.open('https://calendly.com/alexander-dean-miller/availability-for-performance','_blank')">Performance Availability</button>
-    {% else %}
-     <button class="coolButton">Performance Availability</button>
-      <span class="glyphicon glyphicon-lock"></span>  Please Login to access this feature
-    {% endif %}
+{% if user.is_authenticated %}
+     <button class="coolButton" onclick=" window.open('https://calendly.com/alexander-dean-miller/availability-for-performance','_blank')">
+         Performance Availability</button>
+
+{% else %}
+     <button class="coolButton">Performance Availability</button>  <span class="glyphicon glyphicon-lock"></span>
+
+{#    <hr>#}
+    <br><br><br><br>
+    <hr>
+    <span class="glyphicon glyphicon-lock"></span> = Please log
+    in to access this feature</p>
+
+    <br>
+    <button class="coolButton" onclick="location.href='{% url 'login' %}'">
+         Log in</button>
+
+    <button class="coolButton" onclick="location.href='{% url 'register' %}'">
+         Register</button>
+
+{% endif %}
 {% endblock %}
