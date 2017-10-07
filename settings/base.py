@@ -10,14 +10,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'plgsn*!n(kcknqss=174=hcj8f^&bgvna8c+z+=&s9_li7@fay'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 ALLOWED_HOSTS = []
 SITE_ID = 2
-
-
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -121,11 +115,6 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'accounts.backends.EmailAuth',
 )
-
-
-# Stripe environment variables
-STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_bGSY225Gxzy1kMzKpXYgnM4d')
-STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_uCphKUt2PziPqiNBYxbFn6Hi')
 
 STATICFILES_DIRS = (
    os.path.join(BASE_DIR, "static"),
