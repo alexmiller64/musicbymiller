@@ -12,5 +12,4 @@ six
 wheel
 django-paypal
 stripe
-git+https://github.com/alexmiller64/musicbymiller.git
 gunicorn==19.4
