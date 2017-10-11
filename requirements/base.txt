@@ -13,3 +13,4 @@ wheel
 django-paypal
 stripe
 gunicorn==19.4
+whitenoise==3.2
