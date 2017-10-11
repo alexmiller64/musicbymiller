@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d2ff191-e689-49f2-969d-9d78053a79df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/runtime.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/ep.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_website/runtime.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/my_website/procfile.local" afterPath="$PROJECT_DIR$/procfile.local" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/my_website/procfile.txt" afterPath="$PROJECT_DIR$/procfile.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/payment.html" afterPath="$PROJECT_DIR$/templates/payment.html" />
-    </list>
+    <list default="true" id="3d2ff191-e689-49f2-969d-9d78053a79df" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -597,7 +587,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15390626" sideWeight="0.4917647" order="0" side_tool="false" content_ui="combo" />
