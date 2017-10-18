@@ -19,6 +19,7 @@ urlpatterns = [
     url(r'^login/$', accounts_views.login, name='login'),
     url(r'^logout/$', accounts_views.logout, name='logout'),
     url(r'^products/$', product_views.all_products, name='products'),
+    url(r'^blog/products/$', product_views.all_products, name='products'),
     url(r'^about/$', hello_views.get_about, name='about'),
     url(r'^contact/$', hello_views.get_contact, name='contact'),
     url(r'^payment-accepted/$', hello_views.get_payment, name='payment'),
