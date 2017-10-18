@@ -77,11 +77,14 @@
     height: 23%;
 }
 
-#row
+.row
 {
     display: inline;
     float: none;
     flex-wrap: nowrap;
+    width: 25%;
+    height: 25%;
+    padding: 15px;
 }
 
 .text-align{

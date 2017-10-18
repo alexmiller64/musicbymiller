@@ -2,15 +2,15 @@
 
 {% block content %}
 
-    <h1 id="page-text">Six Strings and a Laptop</h1><br>
+    <h1 class="myImage1" id="page-text">Six Strings and a Laptop</h1><br>
 
     <div class="container">
-        <a href="products"><img id="myImage" class="med-pic" src="/static/images/park.jpg" onmouseover="this.src='/static/images/king_kong.jpg'" /></a> <a href="products"><img id="row" class="med-pic" src="/static/images/couple.jpg" onmouseover="this.src='/static/images/band.jpg'"></a>
-        <a href="products"><img id="row" class="med-pic" src="/static/images/sunnies.jpg" onmouseover="this.src='/static/images/EPtext.jpg'" ></a>
+        <a href="products"><img class="row" id="myImage1" src="/static/images/park.jpg" onmouseover="this.src='/static/images/king_kong.jpg'" /></a> <a href="products"><img  id="myImage2" class="row" src="/static/images/couple.jpg" onmouseover="this.src='/static/images/band.jpg'"></a>
+        <a href="products"><img  id="myImage3" class="row" src="/static/images/sunnies.jpg" onmouseover="this.src='/static/images/EPtext.jpg'" ></a>
 
     <div class="scrollbox2">
 
-    <p id="bios">
+    <p class="myImage4" id="bios">
     Hello and welcome!
 
     <br><br>Six Strings and a Laptop is exactly what it sounds like - I'm a musician, singer and web developer!
@@ -30,13 +30,13 @@
 {#    <hr>#}
 {#        <span id="rightSide" class="glyphicon glyphicon-arrow-down"></span></p>#}
 {#    <hr>#}
-    <h1 id="page-text">My adventures through time and space</h1><br>
+    <h1 class="myImage2" id="page-text">My adventures through time and space</h1><br>
     {% for post in posts %}
         <div class="center">
-            <div>
+            <div id="myImage3" >
                 {{ post.published_date }}
             </div>
-            <h1 id="blog-titles">{{ post.title }}</h1>
+            <h1 class ="myImage3" id="blog-titles">{{ post.title }}</h1>
             <p>{{ post.content|linebreaks|truncatewords:30 }}</p>
             <p><button class="coolButton" onclick="location.href={{ post.id }}">Read More</button></p>
         </div>
