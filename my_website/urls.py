@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^products/$', product_views.all_products, name='products'),
     url(r'^blog/products/$', product_views.all_products, name='products'),
     url(r'^about/products/$', product_views.all_products, name='products'),
+    url(r'^contact/products/$', product_views.all_products, name='products'),
     url(r'^about/$', hello_views.get_about, name='about'),
     url(r'^contact/$', hello_views.get_contact, name='contact'),
     url(r'^payment-accepted/$', hello_views.get_payment, name='payment'),
