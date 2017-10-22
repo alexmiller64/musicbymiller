@@ -6,6 +6,11 @@ from django.core.exceptions import ValidationError
 
 class UserRegistrationForm(UserCreationForm):
 
+    email = forms.CharField(
+        label='Email',
+        widget=forms.EmailInput
+    )
+
     password1 = forms.CharField(
         label='Password',
         widget=forms.PasswordInput
