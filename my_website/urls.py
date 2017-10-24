@@ -25,5 +25,6 @@ urlpatterns = [
     url(r'^about/$', hello_views.get_about, name='about'),
     url(r'^contact/$', hello_views.get_contact, name='contact'),
     url(r'^payment-accepted/$', hello_views.get_payment, name='payment'),
+    url(r'^sent/$', hello_views.sent, name='sent'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

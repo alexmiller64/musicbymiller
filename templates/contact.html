@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load bootstrap_tags %}
 {% block content %}
 
     <h1 class="myImage1" id="page-text">How to contact me</h1><br>
@@ -21,12 +22,16 @@
 
     </div>
 
+    <hr>
+        <p><span class="glyphicon glyphicon-arrow-down"></span> <span id="rightSide" class="glyphicon glyphicon-arrow-down"></span></p>
+    <hr>
 
-    <form role="form" action="" method="post">
+    <div class="myImage3" id="contactForm">
+    <form class="decoration" role="form" action="" method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Submit</button>
+    <button class="coolButton" onclick="location.href='{% url 'sent' %}'" type="submit">Submit</button>
     </form>
-
+    </div>
 
 {% endblock %}

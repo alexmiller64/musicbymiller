@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 id="page-text">Success!</h1>
+    <p>Your email has been sent and I will reply shortly.</p>
+
+    <hr>
+
+    <h3 id="page-textSmall">Where to?</h3>
+
+    <br>
+    <button class="coolButton" onclick="location.href='{% url 'blog' %}'">
+         Home/Blog</button>
+
+    <br><br>
+    <button class="coolButton" onclick="location.href='{% url 'products' %}'">
+         Hit The Store</button>
+
+    {% if user.is_authenticated %}
+    <br><br>
+        <button class="coolButton" onclick=" window.open('https://calendly.com/alexander-dean-miller/availability-for-performance','_blank')">
+        Check Performance Availability</button>
+    {% else %}
+    <br><br>
+        <button class="coolButton">Check Performance Availability</button>
+    <span class="glyphicon glyphicon-lock"></span>  Please Login to access this feature
+    {% endif %}
+
+{% endblock %}

@@ -32,18 +32,18 @@ def get_contact(request):
             # Email the profile with the
             # contact information
             template = get_template('touch contact_template.txt')
-        context = Context({
+        context = {
             'contact_name': contact_name,
             'contact_email': contact_email,
             'form_content': form_content,
-        })
+        }
         content = template.render(context)
 
         email = EmailMessage(
             "New contact form submission",
             content,
             "Your website" + '',
-            ['youremail@gmail.com'],
+            ['alexander.dean.miller@gmail.com'],
             headers={'Reply-To': contact_email}
         )
         email.send()
@@ -56,3 +56,7 @@ def get_contact(request):
 
 def get_payment(request):
     return render(request, 'payment.html')
+
+
+def sent(request):
+    return render(request, 'sent.html')
