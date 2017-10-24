@@ -14,8 +14,19 @@
     <br>Alex Miller
     <br>alexander.dean.miller@gmail.com
     <br>0757-6861-159
+
+    <br><br>You can also send me a direct email via the form below.
+    <br><br>I look forward to speaking with you.
     </p>
 
     </div>
+
+
+    <form role="form" action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+    </form>
+
 
 {% endblock %}

@@ -1,4 +1,4 @@
-# Six Strings and A Laptop (Six Salt) README.
+# Six Strings and a Laptop (Six Salt) README.
 
 ## Overview
 
@@ -23,8 +23,8 @@ Please feel free to make any changes or additions you see fit, then submit a pul
 
 ### Getting the code up and running
 1. Firstly you will need to clone this repository by running the ```git clone https://github.com/alexmiller64/musicbymiller.git``` command
-2. After you've done that you'll need to make sure that you have everything in the requirements file installed
-3. Once you have done this, you can acces the site by using the 'python manage.py runserver' command from the projects root directory.
+2. After you've done that you'll need to make sure that you have everything in the requirements file installed, by running the ```pip install -r requirements.txt command```
+3. Once you have done this, you can access the site by using the ```python manage.py runserver``` command from the projects root directory.
 7. With the server running, you can access this site at localhost:8000
 7. Make changes to the code and if you think it belongs in here then just submit a pull request
 
