@@ -47,7 +47,7 @@ def get_contact(request):
             headers={'Reply-To': contact_email}
         )
         email.send()
-        return redirect('contact')
+        return redirect('/sent')
 
     return render(request, 'contact.html', {
         'form': form_class,

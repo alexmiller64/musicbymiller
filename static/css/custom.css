@@ -292,6 +292,7 @@ centerSide{
     text-align: center;
     padding: 25px;
     margin: 20px;
+    flex: inherit;
 }
 
 .decoration{
@@ -306,10 +307,6 @@ centerSide{
     -moz-border-radius:28px;
 	-webkit-border-radius:28px;
 	border-radius:28px;
-}
-
-#formText{
-    background-color: green;
 }
 
 

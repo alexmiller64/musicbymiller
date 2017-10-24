@@ -139,13 +139,13 @@ MEDIA_URL = '/media/'
 LOGIN_URL = 'django.contrib.auth.views.login'
 
 
-EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'sendgrid_username'
-EMAIL_HOST_PASSWORD = 'sendgrid_password'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'alexander.dean.miller@gmail.com'
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 
 # send_mail('Subject here', 'Here is the message.', 'from@example.com', ['to@example.com'], fail_silently=False)
-
-# won't build on Heroku with line 149 included but aware it's needed.
+#
+# # won't build on Heroku with line 149 included but aware it's needed.
