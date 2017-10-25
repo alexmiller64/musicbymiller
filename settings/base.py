@@ -139,7 +139,7 @@ MEDIA_URL = '/media/'
 LOGIN_URL = 'django.contrib.auth.views.login'
 
 
-EMAIL_HOST = 'smtp.mint.webhostingireland.ie'
+EMAIL_HOST = 'mint.webhostingireland.ie'
 EMAIL_HOST_USER = 'sixsalt@winterbear.ie'
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD')
 EMAIL_PORT = 465
