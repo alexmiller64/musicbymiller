@@ -142,6 +142,6 @@ LOGIN_URL = 'django.contrib.auth.views.login'
 EMAIL_HOST = 'mint.webhostingireland.ie'
 EMAIL_HOST_USER = 'sixsalt@winterbear.ie'
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD')
-DEFAULT_FROM_EMAIL = 'alexander.dean.miller@gmail.com'
+# DEFAULT_FROM_EMAIL = 'alexander.dean.miller@gmail.com'
 EMAIL_PORT = 26
 EMAIL_USE_TLS = False

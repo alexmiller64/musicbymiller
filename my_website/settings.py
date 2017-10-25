@@ -152,4 +152,4 @@ DEFAULT_FROM_EMAIL = 'alexander.dean.miller@gmail.com'
 EMAIL_HOST_USER = 'sixsalt@winterbear.ie'
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD')
 EMAIL_USE_TLS = False
-EMAIL_PORT = 1025
+EMAIL_PORT = 26
