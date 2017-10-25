@@ -42,7 +42,7 @@ def get_contact(request):
         email = EmailMessage(
             "New contact form submission",
             content,
-            "Your website" + '',
+            '',
             ['alexander.dean.miller@gmail.com'],
             headers={'Reply-To': contact_email}
         )
