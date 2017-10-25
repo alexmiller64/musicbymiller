@@ -42,8 +42,8 @@ def get_contact(request):
         email = EmailMessage(
             "New contact form submission",
             content,
-            '',
-            ['alexander.dean.miller@gmail.com'],
+            'sixsalt@winterbear.ie',
+            ['sixsalt@winterbear.ie'],
             headers={'Reply-To': contact_email}
         )
         email.send()
