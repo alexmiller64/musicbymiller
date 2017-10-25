@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d2ff191-e689-49f2-969d-9d78053a79df" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_website/settings.py" afterPath="$PROJECT_DIR$/my_website/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings/base.py" afterPath="$PROJECT_DIR$/settings/base.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -30,8 +32,8 @@
       <file leaf-file-name="base.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/settings/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="141" column="26" lean-forward="false" selection-start-line="141" selection-start-column="26" selection-end-line="141" selection-end-column="26" />
+            <state relative-caret-position="310">
+              <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -41,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/my_website/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="246">
-              <caret line="151" column="38" lean-forward="false" selection-start-line="151" selection-start-column="38" selection-end-line="151" selection-end-column="38" />
+              <caret line="151" column="41" lean-forward="true" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -119,8 +121,8 @@
         <option value="$PROJECT_DIR$/templates/register.html" />
         <option value="$PROJECT_DIR$/templates/blogposts.html" />
         <option value="$PROJECT_DIR$/static/js/custom.js" />
-        <option value="$PROJECT_DIR$/my_website/settings.py" />
         <option value="$PROJECT_DIR$/settings/base.py" />
+        <option value="$PROJECT_DIR$/my_website/settings.py" />
       </list>
     </option>
   </component>
@@ -928,15 +930,15 @@
     <entry file="file://$PROJECT_DIR$/my_website/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
-          <caret line="151" column="38" lean-forward="false" selection-start-line="151" selection-start-column="38" selection-end-line="151" selection-end-column="38" />
+          <caret line="151" column="41" lean-forward="true" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settings/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="141" column="26" lean-forward="false" selection-start-line="141" selection-start-column="26" selection-end-line="141" selection-end-column="26" />
+        <state relative-caret-position="310">
+          <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
           <folding />
         </state>
       </provider>
