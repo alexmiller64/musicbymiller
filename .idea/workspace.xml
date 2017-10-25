@@ -27,17 +27,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/settings/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+            <state relative-caret-position="230">
+              <caret line="141" column="19" lean-forward="false" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_website/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="246">
@@ -533,7 +533,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15390626" sideWeight="0.4917647" order="0" side_tool="false" content_ui="combo" />
@@ -925,18 +925,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my_website/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="151" column="41" lean-forward="true" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="141" column="19" lean-forward="false" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="19" />
           <folding />
         </state>
       </provider>
