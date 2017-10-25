@@ -148,7 +148,7 @@ LOGIN_URL = 'django.contrib.auth.views.login'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_FROM_EMAIL = 'testing@example.com'
+DEFAULT_FROM_EMAIL = 'alexander.dean.miller@gmail.com'
 EMAIL_HOST_USER = 'sixsalt@winterbear.ie'
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD')
 EMAIL_USE_TLS = False
