@@ -139,7 +139,7 @@ MEDIA_URL = '/media/'
 LOGIN_URL = 'django.contrib.auth.views.login'
 
 
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.outlook.com'
 EMAIL_HOST_USER = 'sixsalt@outlook.com'
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD')
 EMAIL_PORT = 587
