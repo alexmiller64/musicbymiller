@@ -12,7 +12,7 @@ django-forms-bootstrap==3.1.0
 django-paypal==0.3.6
 django-scheduler==0.8.5
 django-tinymce==2.6.0
-djangorestframework==3.7.0
+djangorestframework==3.11.2
 funcsigs==1.0.2
 gunicorn==19.4.0
 icalendar==3.11.7
